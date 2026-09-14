@@ -223,12 +223,12 @@ function frame(){
  x.lineTo(cx+Math.cos(tw)*R*1.06,cy+Math.sin(tw)*R*1.06);
  x.strokeStyle='rgba(148,163,184,0.5)';x.lineWidth=2;x.stroke();
  x.setLineDash([]);
- var wx=cx+Math.cos(tw)*R*0.72,wy=cy+Math.sin(tw)*R*0.72;
+ var wx=cx+Math.cos(tw)*R*0.52,wy=cy+Math.sin(tw)*R*0.52;
  x.beginPath();x.arc(wx,wy,6,0,6.283);
  x.fillStyle='rgba(203,213,225,0.9)';x.fill();
  x.font=(11*dpr)+'px ui-monospace,monospace';
  x.fillStyle='rgba(148,163,184,0.7)';x.textAlign='center';
- x.fillText('simulated walker',wx,wy-14*dpr);
+ x.fillText('simulated walker',wx,wy+22*dpr);
 
  x.beginPath();x.arc(cx,cy,9,0,6.283);
  x.fillStyle='#0b1320';x.fill();
