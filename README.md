@@ -1,5 +1,7 @@
 # Wi-Fi Presence Sensing on a Raspberry Pi 3B
 
+![verify](https://github.com/AryanNatekar1/wifi-presence-sensing/actions/workflows/verify.yml/badge.svg)
+
 **[Live demo](https://aryannatekar1.github.io/wifi-presence-sensing/)** - runs in your browser, synthetic data. Click any image below to open it.
 
 [![Live browser demo](screenshots/demo.png)](https://aryannatekar1.github.io/wifi-presence-sensing/)
@@ -29,6 +31,12 @@ The more useful finding is methodological. Three separate experimental
 confounds — USB undervoltage, insufficient device separation, and an open or
 closed door — each produced convincing but wrong numbers before the real effect
 was isolated. That story is in [`docs/STUDY.md`](docs/STUDY.md).
+
+![Confound analysis](figures/fig3_confounds.png)
+
+*Every misleading result came from a trial where mean received power differed between conditions. Green points are valid comparisons; red are confounded.*
+
+Every figure above is recomputed from the raw traces on each push: `py src/reproduce.py`.
 
 ---
 
@@ -178,6 +186,7 @@ including the ones that misled me.
 ## License
 
 MIT
+
 
 
 
