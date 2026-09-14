@@ -1,5 +1,17 @@
 # Wi-Fi Presence Sensing on a Raspberry Pi 3B
 
+![Live movement detection](screenshots/wifi1.png)
+*Movement detected - rolling standard deviation above the 1.4 dBm threshold*
+
+![Empty room](screenshots/wifi2.png)
+*Empty room baseline*
+
+![RF-space embedding](screenshots/wifi3.png)
+*Trained zones in the MDS fingerprint embedding*
+
+![Shadow imager](screenshots/wifi4.png)
+*Blocked-bearing estimate from multi-AP attenuation*
+
 Detecting human movement and location from Wi-Fi signal strength alone — no
 camera, no microphone, no extra sensors.
 
