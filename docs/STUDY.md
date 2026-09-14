@@ -182,9 +182,7 @@ This is the result. It passes the pre-registered rule by a factor of three.
 - **Replication outstanding.** The clean empty baseline is a single 45-second
   run. Two independent moving runs support it, but the empty condition requires
   repetition under identical conditions before the result is secure. *(Pending.)*
-- **One unexplained trial.** A 180-second empty capture returned mean −57.11
-  with global σ 3.463 — matched in mean to the clean baseline but far noisier.
-  No explanation has been established. It is recorded rather than discarded.
+- One long trial looked anomalous and was not. A 180-second empty capture          returned mean −57.11 with global σ 3.463. Its rolling median is 0.85, close to   the clean baseline: the high global figure is slow drift across three minutes,   not short-window noise. This is precisely why the study uses a rolling window    rather than global σ.
 - Single subject, single room, single AP, single channel.
 - Continuous walking only. Detecting a stationary or seated person is a harder
   problem and was not attempted.
