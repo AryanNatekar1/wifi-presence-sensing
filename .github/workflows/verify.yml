@@ -1,0 +1,25 @@
+name: verify published figures
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Recompute every figure from the raw traces
+        run: python3 src/reproduce.py
+
+      - name: Check the analysis scripts parse
+        run: |
+          python3 -m py_compile src/analyse.py src/rssi_log.py
+          python3 -m py_compile apps/*.py

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: >-
+  Detecting human presence with Wi-Fi signal strength on a
+  Raspberry Pi 3B
+message: >-
+  If you use this software or data, please cite it using the
+  metadata below.
+type: software
+authors:
+  - given-names: Aryan
+    family-names: Natekar
+repository-code: "https://github.com/AryanNatekar1/wifi-presence-sensing"
+url: "https://aryannatekar1.github.io/wifi-presence-sensing/"
+abstract: >-
+  An experimental study of whether Received Signal Strength
+  Indicator (RSSI) measurements from commodity Raspberry Pi
+  hardware can detect human movement, together with the software
+  used to collect, analyse and visualise the data. Against a
+  threshold fixed before the controlled trials, short-window RSSI
+  variance separated an empty room from continuous human movement
+  by a factor of 5.7 to 6.1 with non-overlapping distributions.
+  The study also documents three experimental confounds - USB
+  undervoltage, insufficient transmitter-receiver separation, and
+  inconsistent door state - each of which produced convincing but
+  incorrect results before being identified. All raw traces,
+  including the void and confounded trials, are published so that
+  every reported figure can be recomputed.
+keywords:
+  - wi-fi sensing
+  - RSSI
+  - presence detection
+  - raspberry pi
+  - signal processing
+  - reproducibility
+license: MIT
+date-released: "2026-09-14"

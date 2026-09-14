@@ -1,0 +1,48 @@
+{
+  "_comment": "Recorded statistics for every trace, as published in docs/STUDY.md. src/reproduce.py recomputes these from data/ and fails if any has drifted. Update only alongside a documented change to the data or the method.",
+  "min_ratio": 2.0,
+  "window_samples": 30,
+  "threshold_dbm": 1.4,
+  "traces": {
+    "rssi_empty.csv": {
+      "mean": -59.40, "median": 0.76,
+      "condition": "empty, geometry A", "status": "void - devices moved between runs"
+    },
+    "rssi_moving.csv": {
+      "mean": -49.65, "median": 0.67,
+      "condition": "moving, geometry A", "status": "void - 9.75 dB mean gap"
+    },
+    "rssi_e2.csv": {
+      "mean": -44.96, "median": 1.94,
+      "condition": "empty, tethered", "status": "valid geometry, degenerate separation"
+    },
+    "rssi_m2.csv": {
+      "mean": -44.65, "median": 2.17,
+      "condition": "moving, tethered", "status": "1.12x - no separation"
+    },
+    "rssi_e3.csv": {
+      "mean": -72.16, "median": 1.43,
+      "condition": "empty, door closed", "status": "door confound, 15.34 dB gap"
+    },
+    "rssi_m3.csv": {
+      "mean": -56.82, "median": 3.10,
+      "condition": "moving, door open", "status": "valid against the open-door baseline"
+    },
+    "rssi_e4.csv": {
+      "mean": -63.68, "median": 1.86,
+      "condition": "empty, door closed", "status": "door confound, 7.37 dB gap"
+    },
+    "rssi_m4.csv": {
+      "mean": -56.31, "median": 2.91,
+      "condition": "moving, door open", "status": "valid against the open-door baseline"
+    },
+    "rssi_e5.csv": {
+      "mean": -57.11, "median": null,
+      "condition": "empty, 180 s", "status": "unexplained - matched mean, high variance"
+    },
+    "rssi_door_open_empty.csv": {
+      "mean": -55.60, "median": 0.51,
+      "condition": "empty, door open", "status": "the clean baseline"
+    }
+  }
+}
