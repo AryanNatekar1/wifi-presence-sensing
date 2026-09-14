@@ -1,5 +1,8 @@
 # Wi-Fi Presence Sensing on a Raspberry Pi 3B
 
+**[Live demo](https://aryannatekar1.github.io/wifi-presence-sensing/)** - runs in your browser, synthetic data. Click any image below to open it.
+
+
 [![Live movement detection](screenshots/wifi1.png)](https://aryannatekar1.github.io/wifi-presence-sensing/)
 *Movement detected - rolling standard deviation above the 1.4 dBm threshold*
 
@@ -173,4 +176,5 @@ including the ones that misled me.
 ## License
 
 MIT
+
 
